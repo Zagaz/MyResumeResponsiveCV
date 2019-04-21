@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--CSS-->
+    <!---  <link rel="stylesheet" href="Main.css">         -->
+
+
+    <style>
+        .myName {
+
+            color: #FFFFFF;
+            background-color: none;
+
+            text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.51);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 7vw;
+
+        }
+
+        .myRank {
+            color: #FFFFFF;
+            text-align: center;
+            text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.51);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4vw;
+        }
+
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+
+
+        #avatar {
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        .contback {
+            background-color: #D0E4F5;
+            background-image: url("https://www.li9.com/wp-content/uploads/2017/12/blue-lines.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: 50% 50%;
+            background-size: cover;
+
+        }
+
+        .sideBackColor {
+            background-color: #bdd1ef;
+        }
+
+        th {
+            text-align: center;
+
+        }
+
+        td {
+            text-align: center;
+
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        h3 {
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+
+
+        }
+
+        .topic {
+
+            background-color: #b2c8ea;
+            border-radius: 5px;
+            font-size: 3vw;
+        }
+
+        .radius15 {
+            border-radius: 15px;
+
+        }
+
+        .meio {
+            text-align: center;
+        }
+
+        .centerAlign {
+            text-align: center;
+        }
+
+        i.hobbie {
+
+            font: 400;
+            color: #FFFFFF;
+
+        }
+
+        .inlneblock {
+            display: inline-block;
+        }
+
+        i {
+            font-size: 40px;
+        }
+
+        .hobbie {
+
+            height: 50px;
+            color: #FFFFFF;
+        }
+
+        .socialIcon {
+
+            color: #FFFFFF;
+        }
+
+        .hobbieLegend {
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .langFont20 {
+            font-size: 22px;
+        }
+
+
+        .rowsize {
+
+            height: 80px;
+
+        }
+
+        .coluna1 {
+            background-color: #536f88;
+        }
+
+        .coluna2 {
+            background-color: #FFFFFF
+        }
+
+        .langFontColor {
+            color: rgb(39, 39, 39);
+
+
+        }
+
+        .marginColuna1 {
+            margin: 0%;
+        }
+
+        .listBackground {
+            background-color: #476883;
+            color: #FFFFFF;
+        }
+
+        .listBackground2 {
+            background-color: #4d6479;
+            color: #FFFFFF;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: white;
+        }
+
+        /* visited link */
+        a:visited {
+            color: rgb(226, 238, 255);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: deepskyblue;
+        }
+
+        /* selected link */
+        a:active {
+            color: rgb(137, 212, 218);
+        }
+
+        .avatar {
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            -webkit-box-shadow: 5px 5px 12px 3px #000000;
+            box-shadow: 5px 5px 12px 3px #000000;
+
+
+
+
+        }
+
+        .heroBack {
+            background: #4d6479 url("https://i.ibb.co/1fw1bwM/plexus-fantasy-abstract-technology-abstract-footage-087585135-prevstill.jpg") no-repeat scroll 0px 0px;
+        }
+    </style>
+    <title>André Ranulfo - WebDev</title>
+</head>
+
+<body>
+
+    <div class="container-fluid heroBack">
+        <div class="row">
+            <div class="col-12 col-sm 12 col-md-3 col-lg-3   col-xl-3 coluna">
+                <div class="row">
+                    <div class="col-12">
+
+                        <img src="https://i.ibb.co/dfKKh8p/avatar.jpg" alt="André Ranulfo - Front-end Developer"
+                            class="avatar">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!--mais duas rows-->
+            <div class="col-12 col-sm 12 col-md-9 col-lg-9   col-xl-9  coluna">
+
+                <div class="row align-items-end">
+                    <div class="col-12 coluna myName ">
+                        André Ranulfo
+
+                    </div>
+                    <div class="col-12 coluna myRank ">
+                        Front-end Developer <br>
+                        Iot/Arduino Programmer
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!---------Duas grandes colunas principaus---------->
+    <div class="container-fluid marginColuna1">
+
+        <div class="row coluna1 marginColuna1 coluna">
+            <!---------COLUNA1---------->
+            <div class="col-12 col-sm 12 col-md-3 col-lg-3   col-xl-3 ">
+                </br>
+
+                <div class="col-sm-12">
+                    <h3 class="topic"> <i class="fas fa-cogs"></i> <strong>Skills</strong></h3>
+
+                </div>
+
+                <div class="col-sm-12 ">
+                    <ul class="list-group list-unstyled listBackground radius15">
+                        <li class="list-group-item listBackground"> <i class="fas fa-envelope"></i> </img>&nbsp<a
+                                href="mailto: andre_ranulfo@hotmail.com">andre_ranulfo@hotmail.com</a></li>
+
+                        <li class="list-group-item listBackground2"> <i class="fas fa-phone-square"></i> &nbsp +55 21
+                            96950-3850 </li>
+
+                    </ul>
+
+
+                </div>
+
+                </br>
+                </br>
+
+                <div class="col-sm-12">
+                    <h3 class="topic"> <i class="fas fa-user-circle"></i> <strong>Social Media</strong></h3>
+                </div>
+
+                <div class="row socialIcon">
+                    <div class="col-4  centerAlign ">
+
+                        <a href="https://www.linkedin.com/in/andre-ranulfo-9a722b1b/"> <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    </div>
+                    <div class="col-4 centerAlign ">
+
+                        <a href="https://github.com/Zagaz"> <i class="fab fa-github"></i> </a>
+
+                    </div>
+                    <div class="col-4 centerAlign">
+
+                        <a href="https://www.facebook.com/andre.ranulfo"> <i class="fab fa-facebook"></i></a>
+
+                    </div>
+                </div>
+
+                <!---------Skills---------->
+                </br>
+
+                <div class="col-sm-12">
+                    <h3 class="topic"> <i class="fas fa-cogs"></i> <strong>Skills</strong></h3>
+
+                </div>
+
+                <div class="col-sm-12 ">
+                    <ul class="list-group list-unstyled listBackground radius15">
+                        <li class="list-group-item listBackground"> <i class="fas fa-book-reader"></i> &nbsp Fast
+                            learner;</li>
+                        <li class="list-group-item listBackground2"> <i class="fas fa-people-carry"></i> &nbsp Teamwork;
+                        </li>
+                        <li class="list-group-item listBackground"> <i class="fas fa-arrows-alt"></i> &nbsp
+                            Adaptability; </li>
+                        <li class="list-group-item listBackground2"> <i class="fas fa-puzzle-piece"></i> &nbsp
+                            Problem-Solving; </li>
+                        <li class="list-group-item listBackground"> <i class="far fa-lightbulb"></i> &nbsp Creativity;
+                        </li>
+                        <li class="list-group-item listBackground2"> <i class="far fa-comments"></i> &nbsp
+                            Communication;</li>
+
+                        <li class="list-group-item listBackground2"> <i class="far fa-eye"></i> Attention to Detail;
+                        </li>
+                        <li class="list-group-item listBackground"> <i class="fas fa-palette"></i><strong>&nbsp Design:
+                            </strong>Photoshop, Corel Draw and
+                            Inkescape;</li>
+                        <li class="list-group-item listBackground2"><i class="fas fa-video"></i> <strong> &nbsp Video
+                                editing:</strong> Sony Vegas and Adobe
+                            Premiere;</li>
+                    </ul>
+                    </br>
+
+                </div>
+
+                <!--Hobbie-->
+                </br>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <h3 class="topic"><i class="far fa-thumbs-up"></i> <strong>Hobbies</strong></h3>
+
+                    </div>
+
+                    <div class=" col-6  centerAlign">
+                        <i class="fas fa-gamepad hobbie"></i> </br>
+                        <h6 class="hobbieLegend">Games</h6>
+
+                    </div>
+                    <br>
+
+                    <div class=" col-6  centerAlign">
+                        <i class="fas fa-film hobbie"></i> </br>
+                        <h6 class="hobbieLegend">Movies</h6>
+
+                    </div>
+
+                    <br>
+
+                    <div class=" col-6  centerAlign">
+                        <i class="fas fa-suitcase hobbie "></i> </br>
+                        <h6 class="hobbieLegend">Travel</h6>
+
+                    </div>
+                    <br>
+
+                    <div class=" col-6 centerAlign ">
+                        <i class="fas fa-hand-spock hobbie "></i> </br>
+                        <h6 class="hobbieLegend">Science fiction</h6>
+
+                    </div>
+                    <br>
+
+
+
+
+                </div>
+                <br>
+               
+                
+                
+                
+                
+                
+            </div>
+
+
+
+
+
+
+
+
+            
+
+
+
+            <!---------COLUNA2---col-12 col-sm 12 col-md-3 col-lg-3   col-xl-3------->
+            <div class="col-12 col-sm 12 col-md-9 col-lg-9   col-xl-9 coluna2 coluna">
+                <div class="row">
+                    <!---------ABOUT---------->
+                    <div class="col-sm-12">
+                        <br>
+                        <h3 class="topic"> <i class="fas fa-user"></i> <strong>About me</strong></h3>
+
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p>I've always been a curious person, creative and a knack to understand how things work. I was always fascinated by science and technology, especially after watching Cosmos from Carl Sagan when I was 8 and also realized that I had a natural talent for drawing and illustration.<br>
+                            In Web Development, I can merge my two talents, design and technology</p>
+
+                    </div>
+
+                    <!---------Coding---------->
+                    <div class="col-sm-12">
+                        <br>
+                        <h3 class="topic"> <i class="fas fa-code"></i> <strong>Coding</strong></h3>
+
+                    </div>
+                    <div class="col-sm-12">
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Language:</strong></span></span><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"> C# and Java (OOP)</span></span>;</p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Front-end:</strong> HTML, CSS, JavaScript, Bootstrap, ASP.NET;</span></span></p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Iot: </strong>Arduino;</span></span></p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Design:</strong> Photopshop, Corel Draw, Inkescape;</span></span></p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Video Editing</strong>: Sony Vegas and Adobe Premiere.</span></span></p>
+                            <p>&nbsp;</p>
+
+                    </div>
+
+                    <!--------Lang--------------------->
+
+                    <div class="col-sm-12 coluna">
+                        <h3 class="topic"><i class="fas fa-language"></i> <strong>Languages</strong></h3>
+
+                    </div>
+
+                    <div class="col-sm-12 coluna ">
+                        <table class="table">
+                            <thead>
+                                <tr class="langFontColor  centerAlign ">
+                                    <th> <i class="far fa-flag centerAlign"></i> </th>
+                                    <th><i class="far fa-comment centerAlign"></i></th>
+                                    <th><i class="fas fa-assistive-listening-systems centerAlign"></i></th>
+                                    <th><i class="far fa-edit centerAlign"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="langFontColor   centerAlign">
+                                    <td class="centerAlign langFont20"><strong>English</strong></td>
+                                    <td class="langFont20"><i class="far fa-laugh"></i></td>
+                                    <td class="langFont20"><i class="far fa-laugh"></i></td>
+                                    <td class="langFont20"><i class="far fa-laugh"></i></td>
+                                </tr>
+                                <tr class="langFontColor  ">
+                                    <td class="centerAlign langFont20"><strong>Português</strong></td>
+                                    <td class="langFont20"><i class="far fa-laugh-beam"></i></td>
+                                    <td class="langFont20"><i class="far fa-laugh-beam"></i></td>
+                                    <td class="langFont20"><i class="far fa-laugh-beam"></i></i></td>
+                                </tr>
+                                <tr class="langFontColor ">
+                                    <td class="centerAlign langFont20"><strong>Español</strong></td>
+                                    <td><i class="far fa-smile"></i></td>
+                                    <td><i class="far fa-laugh"></i></i></td>
+                                    <td><i class="far fa-frown"></i></td>
+                                </tr>
+                                <tr class="langFontColor langFont20">
+                                    <td class="centerAlign"><strong>עברית</strong></td>
+                                    <td><i class="far fa-sad-tear"></i></td>
+                                    <td><i class="far fa-sad-tear"></i></td>
+                                    <td><i class="far fa-sad-tear"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <!---------Experience---------->
+                    <div class="col-sm-12">
+                        <br>
+                        <h3 class="topic"> <i class="fas fa-id-badge"></i> <strong>Experience</strong></h3>
+
+                    </div>
+                    <div class="col-sm-12">
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">1994-1998: <strong>Imagination Cartoons -</strong> Miami-Fl. - Designer</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">1998-2002: <strong>VARIG Arilines</strong> - Rio de Janeiro-RJ Reservation agent;</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">2002-2006: <strong>Micolins </strong>- English teacher;</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">2006-2014: <strong>Offshore Oil exploration</strong> &ndash; Maca&eacute;-RJ;</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">2015-2018: <strong>Freelancer </strong>- Web Design and Other Jobs</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;">2019: <strong>Menorah Comunica&ccedil;&otilde;es</strong> - Web Design and Video Editor</span></span></p>
+
+                    </div>
+
+                    <!---------Edu-------jhgkjhg--->
+                    <div class="col-sm-12">
+                        <br>
+                        <h3 class="topic"> <i class="fas fa-graduation-cap"></i> <strong>Education</strong></h3>
+
+                    </div>
+                    <div class="col-sm-12">
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong><span style="color: #000000;"><span style="font-size: small;"><strong>Advertising and Marketing </strong></span></span></strong><strong><span style="color: #000000;"><span style="font-size: small;">- </span></span></strong><strong><span style="color: #000000;"><span style="font-size: small;"><span style="font-weight: normal;">Universidade Est&aacute;cio de S&aacute;.</span></span></span></strong></span></span></span></p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Safety Technician</strong> - Instituto Polivalente</span></span></p>
+                            <p style="margin-bottom: 0in;"><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>C# </strong>- Funda&ccedil;&atilde;o Bradesco;</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>Java &amp; OOP </strong>- Curso em V&iacute;deo;</span></span></p>
+                            <p><span style="font-family: Arial, sans-serif;"><span style="font-size: small;"><strong>IoT </strong>- codeiot.org.br - Samsung/LSITEC </span></span></p>
+                            <p>&nbsp;</p>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="row">
+                
+                        <div class="col-sm-12">
+                            <h3 class="topic"><i class="fas fa-user-tie"></i> <strong>References</strong></h3>
+                
+                        </div>
+                
+                    <div class="col-12">
+                
+                            <h4> &nbsp <i class="fas fa-caret-right"></i> Saul Stuart Gefter</h4> <br>
+                            <h5> &nbsp +1 567-777-5459</h5>
+                            <hr>
+                            <br>
+                
+                    </div>
+                    <div class="col-12">
+                
+                            <h4> &nbsp <i class="fas fa-caret-right"></i> Rubens Cohen</h4> <br>
+                            <h5> &nbsp +55 99998-2479</h5>
+                            <hr>
+                            <br>
+                
+                    </div>
+                    <div class="col-12">
+                
+                            <h4> &nbsp <i class="fas fa-caret-right"></i> Sérgio Sobreira</h4> <br>
+                            <h5> &nbsp +55 99300-5757</h5>
+                            <hr>
+                            <br>
+                
+                    </div>
+                
+                
+                
+                
+                
+                
+                        <br>
+                
+                
+                
+                
+                    </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+    
+
+
+</body>
+
+</html>
